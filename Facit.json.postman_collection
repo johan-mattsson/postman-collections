@@ -1,0 +1,167 @@
+{
+	"id": "f5ae92a7-becf-6482-faf1-24a5d9a7610c",
+	"name": "Facit",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "effe03e8-bc98-425f-4fe6-53e634e63a1a",
+			"name": "FlightCost",
+			"description": "",
+			"order": [
+				"5bde1a47-664c-56be-6c85-5cab445f32dd",
+				"1b648684-33ae-1475-c4d3-707f9a782776"
+			],
+			"collection_name": "Facit",
+			"collection_id": "f5ae92a7-becf-6482-faf1-24a5d9a7610c"
+		},
+		{
+			"id": "a7ffdefd-e858-b9fc-8e83-af46fe59265e",
+			"name": "Geography",
+			"description": "",
+			"order": [
+				"a0dcb0bf-c816-f08f-2975-12308d4e4690",
+				"e1851b52-4b48-fe85-6102-d9d24b7e7dcd",
+				"5abb5ca6-4bbf-745d-289a-0345b904db1e"
+			],
+			"collection_name": "Facit",
+			"collection_id": "f5ae92a7-becf-6482-faf1-24a5d9a7610c"
+		},
+		{
+			"id": "ad0017b3-88b1-b63b-a467-00169dbbd982",
+			"name": "Seasonality",
+			"description": "",
+			"order": [
+				"cdab2c12-de81-8c09-7650-9223385837a6"
+			],
+			"collection_name": "Facit",
+			"collection_id": "f5ae92a7-becf-6482-faf1-24a5d9a7610c"
+		},
+		{
+			"id": "0e195f6f-3915-11a7-ed81-e61e53244745",
+			"name": "TransferCost",
+			"description": "",
+			"order": [
+				"60e360ba-05a8-017f-4ecb-240d959bcbb8"
+			],
+			"collection_name": "Facit",
+			"collection_id": "f5ae92a7-becf-6482-faf1-24a5d9a7610c"
+		}
+	],
+	"timestamp": 1389352347371,
+	"synced": false,
+	"requests": [
+		{
+			"id": "1b648684-33ae-1475-c4d3-707f9a782776",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{apibaseurl}}/cost/flightcost",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": "[{\"productDestinationId\":\"ProductDestinations/7-Sal\",\"brandId\":\"Brands/BR-000003\",\"value\":\"11\"}\n,{\"productDestinationId\":\"ProductDestinations/7-Sal\",\"brandId\":\"Brands/BR-000005\",\"value\":\"22\"}\n,{\"productDestinationId\":\"ProductDestinations/7-Sal\",\"brandId\":\"Brands/BR-000006\",\"value\":\"33\"}]",
+			"dataMode": "raw",
+			"version": 2,
+			"time": 1386861163371,
+			"name": "Save",
+			"description": "",
+			"collectionId": "f5ae92a7-becf-6482-faf1-24a5d9a7610c",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "5abb5ca6-4bbf-745d-289a-0345b904db1e",
+			"headers": "",
+			"url": "{{apibaseurl}}/geography/periods",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"time": 1386748640052,
+			"name": "Periods",
+			"description": "",
+			"collectionId": "f5ae92a7-becf-6482-faf1-24a5d9a7610c",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "5bde1a47-664c-56be-6c85-5cab445f32dd",
+			"headers": "",
+			"url": "{{apibaseurl}}/cost/flightcost/?id=PeriodicalGeographies%2fPERIOD-7",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"time": 1386841357329,
+			"name": "GetFlightCostsForPeriodByBrand",
+			"description": "",
+			"collectionId": "f5ae92a7-becf-6482-faf1-24a5d9a7610c",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "60e360ba-05a8-017f-4ecb-240d959bcbb8",
+			"headers": "",
+			"url": "{{apibaseurl}}/cost/transfercost/?id=PeriodicalGeographies%2fPERIOD-8",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"time": 1386920344119,
+			"name": "Get transfercosts",
+			"description": "",
+			"collectionId": "f5ae92a7-becf-6482-faf1-24a5d9a7610c",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "a0dcb0bf-c816-f08f-2975-12308d4e4690",
+			"headers": "",
+			"url": "{{apibaseurl}}/geography/Brands",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"time": 1386748798485,
+			"name": "Brands",
+			"description": "",
+			"collectionId": "f5ae92a7-becf-6482-faf1-24a5d9a7610c",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "cdab2c12-de81-8c09-7650-9223385837a6",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "{{apibaseurl}}/Seasonality/List ",
+			"pathVariables": {},
+			"method": "POST",
+			"data": "BrandId=Brands%2FBR-000003&ProductDestinationIds%5B%5D=ProductDestinations%2F8-Bulgaria&ProductDestinationIds%5B%5D=ProductDestinations%2F8-Cyprus&ProductDestinationIds%5B%5D=ProductDestinations%2F8-Hurghada+Coast&ProductDestinationIds%5B%5D=ProductDestinations%2F8-Corfu&ProductDestinationIds%5B%5D=ProductDestinations%2F8-Crete&ProductDestinationIds%5B%5D=ProductDestinations%2F8-Rhodes&ProductDestinationIds%5B%5D=ProductDestinations%2F8-Samos&ProductDestinationIds%5B%5D=ProductDestinations%2F8-Sardinia&ProductDestinationIds%5B%5D=ProductDestinations%2F8-Gran+Canaria&ProductDestinationIds%5B%5D=ProductDestinations%2F8-Ibiza&ProductDestinationIds%5B%5D=ProductDestinations%2F8-Majorca&ProductDestinationIds%5B%5D=ProductDestinations%2F8-Antalya+Coast",
+			"dataMode": "raw",
+			"version": 2,
+			"time": 1389352666184,
+			"name": "Get list",
+			"description": "",
+			"collectionId": "f5ae92a7-becf-6482-faf1-24a5d9a7610c",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "e1851b52-4b48-fe85-6102-d9d24b7e7dcd",
+			"headers": "",
+			"url": "{{apibaseurl}}/geography/FlatGeography?id=PeriodicalGeographies%2fPERIOD-7",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"time": 1386748648616,
+			"name": "FlatGeography",
+			"description": "",
+			"collectionId": "f5ae92a7-becf-6482-faf1-24a5d9a7610c",
+			"responses": [],
+			"synced": false
+		}
+	]
+}
