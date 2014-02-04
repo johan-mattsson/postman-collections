@@ -1,0 +1,65 @@
+{
+	"id": "e31ad3cb-59cc-d112-715a-d7b9245587b0",
+	"name": "RabbitMQ.Monitor",
+	"description": "",
+	"order": [
+		"fa38c878-10cd-64e7-c9d6-a1786a742799",
+		"2298ae09-a0d4-5b03-c111-25f960cf416d",
+		"6e1d064e-2443-d73c-4650-536b8d67b09f"
+	],
+	"folders": [],
+	"timestamp": 1387552003542,
+	"synced": false,
+	"requests": [
+		{
+			"id": "2298ae09-a0d4-5b03-c111-25f960cf416d",
+			"headers": "Authorization: Basic Z3Vlc3Q6Z3Vlc3Q=\n",
+			"url": "http://localhost:15672/api/queues",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"name": "Get queues",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1389272129052,
+			"version": 2,
+			"responses": [],
+			"collectionId": "e31ad3cb-59cc-d112-715a-d7b9245587b0",
+			"synced": false
+		},
+		{
+			"id": "6e1d064e-2443-d73c-4650-536b8d67b09f",
+			"headers": "Authorization: Basic Z3Vlc3Q6Z3Vlc3Q=\n",
+			"url": "http://localhost:15672/api/exchanges",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"name": "Get exchanges",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1389272147531,
+			"version": 2,
+			"responses": [],
+			"collectionId": "e31ad3cb-59cc-d112-715a-d7b9245587b0",
+			"synced": false
+		},
+		{
+			"id": "fa38c878-10cd-64e7-c9d6-a1786a742799",
+			"headers": "Authorization: Basic Z3Vlc3Q6Z3Vlc3Q=\n",
+			"url": "http://localhost:15672/api/queues/%2f/facit.prices",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"time": 1389273066415,
+			"name": "Get Queue-info",
+			"description": "",
+			"collectionId": "e31ad3cb-59cc-d112-715a-d7b9245587b0",
+			"responses": [],
+			"synced": false
+		}
+	]
+}

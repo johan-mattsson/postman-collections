@@ -5,44 +5,44 @@
 	"order": [],
 	"folders": [
 		{
-			"id": "effe03e8-bc98-425f-4fe6-53e634e63a1a",
+			"id": "99060f13-bacc-df81-5c35-36580d622b99",
 			"name": "FlightCost",
 			"description": "",
 			"order": [
-				"5bde1a47-664c-56be-6c85-5cab445f32dd",
-				"1b648684-33ae-1475-c4d3-707f9a782776"
+				"17d5f122-95a0-c92f-ad88-7e304c48693e",
+				"3fb303f1-5b68-05f9-eeed-1968c1356ae2"
 			],
 			"collection_name": "Facit",
 			"collection_id": "f5ae92a7-becf-6482-faf1-24a5d9a7610c"
 		},
 		{
-			"id": "a7ffdefd-e858-b9fc-8e83-af46fe59265e",
+			"id": "8ca3e73b-f682-1f98-0c1a-b0fa7d0a65b3",
 			"name": "Geography",
 			"description": "",
 			"order": [
-				"a0dcb0bf-c816-f08f-2975-12308d4e4690",
-				"e1851b52-4b48-fe85-6102-d9d24b7e7dcd",
-				"5abb5ca6-4bbf-745d-289a-0345b904db1e"
+				"f1346e9e-0caf-6a7d-1573-ff95cfd6481f",
+				"c3039058-d5e4-7a19-1c44-901faac9c420",
+				"22d7232b-2650-e1d0-1f6f-3e934df12518"
 			],
 			"collection_name": "Facit",
 			"collection_id": "f5ae92a7-becf-6482-faf1-24a5d9a7610c"
 		},
 		{
-			"id": "ad0017b3-88b1-b63b-a467-00169dbbd982",
+			"id": "f32d7e7d-787a-29f6-1e20-6dda3d68530d",
 			"name": "Seasonality",
 			"description": "",
 			"order": [
-				"cdab2c12-de81-8c09-7650-9223385837a6"
+				"a0625af1-1559-97b4-b7a1-2103311e7aab"
 			],
 			"collection_name": "Facit",
 			"collection_id": "f5ae92a7-becf-6482-faf1-24a5d9a7610c"
 		},
 		{
-			"id": "0e195f6f-3915-11a7-ed81-e61e53244745",
+			"id": "e40fcc54-ba83-9c1a-27e0-ea7f7644c52c",
 			"name": "TransferCost",
 			"description": "",
 			"order": [
-				"60e360ba-05a8-017f-4ecb-240d959bcbb8"
+				"964bdeb2-be4b-87fe-9c73-e458b85f3062"
 			],
 			"collection_name": "Facit",
 			"collection_id": "f5ae92a7-becf-6482-faf1-24a5d9a7610c"
@@ -52,39 +52,7 @@
 	"synced": false,
 	"requests": [
 		{
-			"id": "1b648684-33ae-1475-c4d3-707f9a782776",
-			"headers": "Content-Type: application/json\n",
-			"url": "{{apibaseurl}}/cost/flightcost",
-			"pathVariables": {},
-			"method": "PUT",
-			"data": "[{\"productDestinationId\":\"ProductDestinations/7-Sal\",\"brandId\":\"Brands/BR-000003\",\"value\":\"11\"}\n,{\"productDestinationId\":\"ProductDestinations/7-Sal\",\"brandId\":\"Brands/BR-000005\",\"value\":\"22\"}\n,{\"productDestinationId\":\"ProductDestinations/7-Sal\",\"brandId\":\"Brands/BR-000006\",\"value\":\"33\"}]",
-			"dataMode": "raw",
-			"version": 2,
-			"time": 1386861163371,
-			"name": "Save",
-			"description": "",
-			"collectionId": "f5ae92a7-becf-6482-faf1-24a5d9a7610c",
-			"responses": [],
-			"synced": false
-		},
-		{
-			"id": "5abb5ca6-4bbf-745d-289a-0345b904db1e",
-			"headers": "",
-			"url": "{{apibaseurl}}/geography/periods",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "params",
-			"version": 2,
-			"time": 1386748640052,
-			"name": "Periods",
-			"description": "",
-			"collectionId": "f5ae92a7-becf-6482-faf1-24a5d9a7610c",
-			"responses": [],
-			"synced": false
-		},
-		{
-			"id": "5bde1a47-664c-56be-6c85-5cab445f32dd",
+			"id": "17d5f122-95a0-c92f-ad88-7e304c48693e",
 			"headers": "",
 			"url": "{{apibaseurl}}/cost/flightcost/?id=PeriodicalGeographies%2fPERIOD-7",
 			"pathVariables": {},
@@ -100,7 +68,39 @@
 			"synced": false
 		},
 		{
-			"id": "60e360ba-05a8-017f-4ecb-240d959bcbb8",
+			"id": "22d7232b-2650-e1d0-1f6f-3e934df12518",
+			"headers": "",
+			"url": "{{apibaseurl}}/geography/periods",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"time": 1386748640052,
+			"name": "Periods",
+			"description": "",
+			"collectionId": "f5ae92a7-becf-6482-faf1-24a5d9a7610c",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "3fb303f1-5b68-05f9-eeed-1968c1356ae2",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{apibaseurl}}/cost/flightcost",
+			"pathVariables": {},
+			"method": "PUT",
+			"data": "[{\"productDestinationId\":\"ProductDestinations/7-Sal\",\"brandId\":\"Brands/BR-000003\",\"value\":\"11\"}\n,{\"productDestinationId\":\"ProductDestinations/7-Sal\",\"brandId\":\"Brands/BR-000005\",\"value\":\"22\"}\n,{\"productDestinationId\":\"ProductDestinations/7-Sal\",\"brandId\":\"Brands/BR-000006\",\"value\":\"33\"}]",
+			"dataMode": "raw",
+			"version": 2,
+			"time": 1386861163371,
+			"name": "Save",
+			"description": "",
+			"collectionId": "f5ae92a7-becf-6482-faf1-24a5d9a7610c",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "964bdeb2-be4b-87fe-9c73-e458b85f3062",
 			"headers": "",
 			"url": "{{apibaseurl}}/cost/transfercost/?id=PeriodicalGeographies%2fPERIOD-8",
 			"pathVariables": {},
@@ -116,23 +116,7 @@
 			"synced": false
 		},
 		{
-			"id": "a0dcb0bf-c816-f08f-2975-12308d4e4690",
-			"headers": "",
-			"url": "{{apibaseurl}}/geography/Brands",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "params",
-			"version": 2,
-			"time": 1386748798485,
-			"name": "Brands",
-			"description": "",
-			"collectionId": "f5ae92a7-becf-6482-faf1-24a5d9a7610c",
-			"responses": [],
-			"synced": false
-		},
-		{
-			"id": "cdab2c12-de81-8c09-7650-9223385837a6",
+			"id": "a0625af1-1559-97b4-b7a1-2103311e7aab",
 			"headers": "Content-Type: application/x-www-form-urlencoded\n",
 			"url": "{{apibaseurl}}/Seasonality/List ",
 			"pathVariables": {},
@@ -148,7 +132,7 @@
 			"synced": false
 		},
 		{
-			"id": "e1851b52-4b48-fe85-6102-d9d24b7e7dcd",
+			"id": "c3039058-d5e4-7a19-1c44-901faac9c420",
 			"headers": "",
 			"url": "{{apibaseurl}}/geography/FlatGeography?id=PeriodicalGeographies%2fPERIOD-7",
 			"pathVariables": {},
@@ -158,6 +142,22 @@
 			"version": 2,
 			"time": 1386748648616,
 			"name": "FlatGeography",
+			"description": "",
+			"collectionId": "f5ae92a7-becf-6482-faf1-24a5d9a7610c",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "f1346e9e-0caf-6a7d-1573-ff95cfd6481f",
+			"headers": "",
+			"url": "{{apibaseurl}}/geography/Brands",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"time": 1386748798485,
+			"name": "Brands",
 			"description": "",
 			"collectionId": "f5ae92a7-becf-6482-faf1-24a5d9a7610c",
 			"responses": [],
